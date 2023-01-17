@@ -33,7 +33,7 @@
           class="text-2xl w-96 border border-pale-blue rounded-full py-5 px-12 placeholder:text-pale-blue placeholder:text-xl md:w-3/4"
           type="email" name="email" id="email" placeholder="Your email address...">
         <button
-          class="text-xl w-96 bg-blue text-white rounded-full py-5 px-12 text-center font-semibold shadow-sm shadow-sky-600 md:w-1/4"
+          class="text-xl w-96 bg-blue hover:bg-pale-blue transition-colors text-white rounded-full py-5 px-12 text-center font-semibold shadow-md md:w-1/4"
           type="submit">Notify
           Me</button>
       </form>
@@ -46,12 +46,15 @@
 
     <footer>
       <div class="flex justify-center gap-6">
-        <box-icon class="px-2 py-2 w-20 h-20 cursor-pointer" type='logo' name='facebook' color="hsl(223, 87%, 63%)"
-          border="circle" animation="tada-hover"></box-icon>
-        <box-icon class="px-2 py-2 w-20 h-20 cursor-pointer" type='logo' name='twitter' color="hsl(223, 87%, 63%)"
-          border="circle" animation="tada-hover"></box-icon>
-        <box-icon class="px-2 py-2 w-20 h-20 cursor-pointer" type='logo' name='instagram' color="hsl(223, 87%, 63%)"
-          border="circle" animation="tada-hover"></box-icon>
+        <box-icon
+          class="px-2 py-2 w-16 h-16 cursor-pointer hover:bg-blue rounded-full border border-gray  transition-colors fill-blue hover:fill-white hover:border-blue"
+          type='logo' name='facebook' animation="tada-hover"></box-icon>
+        <box-icon
+          class="px-2 py-2 w-16 h-16 cursor-pointer hover:bg-blue rounded-full border border-gray  transition-colors fill-blue hover:fill-white hover:border-blue"
+          type='logo' name='twitter' animation="tada-hover"></box-icon>
+        <box-icon
+          class="px-2 py-2 w-16 h-16 cursor-pointer hover:bg-blue rounded-full border border-gray  transition-colors fill-blue hover:fill-white hover:border-blue"
+          type='logo' name='instagram' animation="tada-hover"></box-icon>
       </div>
       <p class="pt-16 md:pt-10 text-xl text-center text-gray">&copy; Copyright Ping. All rights reserved.</p>
     </footer>
