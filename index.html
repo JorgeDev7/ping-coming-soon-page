@@ -17,12 +17,12 @@
 
 <body>
 
-  <div class="container mx-auto px-5">
-    <header class="flex justify-center items-center mt-32">
+  <div class="container mx-auto px-5 max-h-screen flex flex-col justify-between gap-32">
+    <header class="flex justify-center items-center mt-40">
       <img class="w-28" src="./images/logo.svg" alt="PING logo">
     </header>
 
-    <main class="mt-16 text-center">
+    <main class="text-center mb-60">
       <h1 class="text-4xl pb-8 text-gray font-light">We are launching <span
           class="font-bold text-very-dark-blue">soon!</span></h1>
 
@@ -45,10 +45,15 @@
     </main>
 
     <footer>
-      <div class="flex">
-
+      <div class="flex justify-center gap-6">
+        <box-icon class="px-2 py-2 w-20 h-20 cursor-pointer" type='logo' name='facebook' color="hsl(223, 87%, 63%)"
+          border="circle" animation="tada-hover"></box-icon>
+        <box-icon class="px-2 py-2 w-20 h-20 cursor-pointer" type='logo' name='twitter' color="hsl(223, 87%, 63%)"
+          border="circle" animation="tada-hover"></box-icon>
+        <box-icon class="px-2 py-2 w-20 h-20 cursor-pointer" type='logo' name='instagram' color="hsl(223, 87%, 63%)"
+          border="circle" animation="tada-hover"></box-icon>
       </div>
-      <p>&copy; Copyright Ping. All rights reserved.</p>
+      <p class="pt-16 text-xl text-center text-gray">&copy; Copyright Ping. All rights reserved.</p>
     </footer>
   </div>
 
