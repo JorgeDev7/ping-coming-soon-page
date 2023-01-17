@@ -689,9 +689,22 @@ video {
   border-color: hsl(223 100% 88% / var(--tw-border-opacity));
 }
 
+.border-gray {
+  --tw-border-opacity: 1;
+  border-color: hsl(0 0% 59% / var(--tw-border-opacity));
+}
+
 .bg-blue {
   --tw-bg-opacity: 1;
   background-color: hsl(223 87% 63% / var(--tw-bg-opacity));
+}
+
+.fill-white {
+  fill: #fff;
+}
+
+.fill-blue {
+  fill: hsl(223, 87%, 63%);
 }
 
 .p-5 {
@@ -812,9 +825,21 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-sky-600 {
   --tw-shadow-color: #0284c7;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 html {
@@ -851,6 +876,45 @@ body {
 .placeholder\:text-pale-blue::placeholder {
   --tw-text-opacity: 1;
   color: hsl(223 100% 88% / var(--tw-text-opacity));
+}
+
+.hover\:border-blue:hover {
+  --tw-border-opacity: 1;
+  border-color: hsl(223 87% 63% / var(--tw-border-opacity));
+}
+
+.hover\:bg-red-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(223 87% 63% / var(--tw-bg-opacity));
+}
+
+.hover\:bg-pale-blue:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(223 100% 88% / var(--tw-bg-opacity));
+}
+
+.hover\:fill-white:hover {
+  fill: #fff;
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:shadow-sky-600:hover {
+  --tw-shadow-color: #0284c7;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.hover\:shadow-blue:hover {
+  --tw-shadow-color: hsl(223, 87%, 63%);
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 @media (min-width: 768px) {
