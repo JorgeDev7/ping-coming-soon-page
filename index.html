@@ -17,41 +17,42 @@
 
 <body>
 
-  <div>
-    <header>
-      <img src="./images/logo.svg" alt="PING logo">
+  <div class="container mx-auto px-5">
+    <header class="flex justify-center items-center mt-32">
+      <img class="w-28" src="./images/logo.svg" alt="PING logo">
     </header>
 
-    <main>
-      <h1>We are launching soon!</h1>
+    <main class="mt-16 text-center">
+      <h1 class="text-4xl pb-8 text-gray font-light">We are launching <span
+          class="font-bold text-very-dark-blue">soon!</span></h1>
 
-      <h3>Subscribe and get notified</h3>
+      <h3 class="text-xl font-light text-very-dark-blue">Subscribe and get notified</h3>
 
-      <form>
-        <input type="email" name="email" id="email">
-        <button type="submit">Notify Me</button>
+      <form class="flex flex-col items-center justify-center gap-5 pt-16">
+        <input
+          class="text-2xl w-96 border border-pale-blue rounded-full py-5 px-12 placeholder:text-pale-blue placeholder:text-xl"
+          type="email" name="email" id="email" placeholder="Your email address...">
+        <button
+          class="text-xl w-96 bg-blue text-white rounded-full py-5 px-12 text-center font-semibold shadow-sm shadow-sky-600"
+          type="submit">Notify
+          Me</button>
       </form>
 
-      <!-- imagen aqui -->
+      <div class="mt-32">
+        <img src="./images/illustration-dashboard.png" alt="dashboard img">
+      </div>
 
     </main>
 
     <footer>
-      <div>
-        <svg class="icon icon-facebook">
-          <use xlink:href="#icon-facebook"></use>
-        </svg>
-        <svg class="icon icon-twitter">
-          <use xlink:href="#icon-twitter"></use>
-        </svg>
-        <svg class="icon icon-instagram">
-          <use xlink:href="#icon-instagram"></use>
-        </svg>
+      <div class="flex">
+
       </div>
       <p>&copy; Copyright Ping. All rights reserved.</p>
     </footer>
   </div>
 
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 
 </html>
